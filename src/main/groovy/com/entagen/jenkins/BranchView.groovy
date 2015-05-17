@@ -5,7 +5,7 @@ class BranchView {
     String branchName
 
     public String getSafePrefix() {
-        return templateJobPrefix.replaceAll('.','').replaceAll('*','')
+        return templateJobPrefix.replace('.','').replace('*','')
     }
 
     public String getViewName() {
